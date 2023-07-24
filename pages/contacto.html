@@ -1,42 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Bartender.ing- Contacto</title>
-  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <title>Bartender.ing</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="shortcut icon" href="../imgs/favicon.jpg" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-          <h1 class="logo" id="logo">Bartender.ing</h1>
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-    </div>
-      </header>
   
-  <section>
-    <h2>Contacto</h2>
-    <p>Para más información o para hacer una reserva, completa el siguiente formulario:</p>
-    <form>
-     
-    </form>
-  </section>
-  
-  <footer>
+  <header class="header">
     <div class="container">
-      <p>Todos los derechos reservados &copy; 2023 Bartender.ing</p>
-      <nav>
+      <div class="logo" id="logo">
+        <img class="logo-img" src="../imgs/logo.jpg" alt="Bartender.ing Logo">
+      </div>
+      <nav class="nav-list">
         <ul>
-          <li><a href="#logo">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
@@ -44,7 +26,64 @@
         </ul>
       </nav>
     </div>
+  </header>
+
+
+  <section class="contacto">
+    <div class="container">
+      <div class="grid-container">
+        <div class="contacto-content">
+          <h2>Contacta con Nosotros</h2>
+          <p>Si estás planeando un evento, nos encantaría saber de ti. Todas las preguntas y consultas pueden dirigirse a nuestro equipo utilizando el formulario a continuación. No hay evento ni lugar que no podamos atender... cócteles donde quieras, cuando quieras.</p>
+        </div>
+        <div class="contacto-formulario">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="celular">Número de Celular:</label>
+              <input type="tel" class="form-control" id="celular" name="celular">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="8" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="contacto-imagen">
+          <img src="../imgs/background3.jpg" alt="Imagen de contacto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Todos los derechos reservados &copy; 2023 Bartender.ing</p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="#logo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
-  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

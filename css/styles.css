@@ -5,130 +5,389 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background-color: #57433A;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 7.2rem;
+}
+
+.nav-list ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-  
-  header {
-    background-color: #292221;
-    color: #fff;
-    padding: 10px;
-  }
-  
-.logo {
-color: #DED5D0;
 
+.nav-list ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-list ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.slider {
+  padding: 10rem;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imgs/fondo2.jpg);
+  color: #fff;
+  height: 600px;
+}
+
+.slider h1 {
+  font-size: 3rem;
+}
+
+.reserva {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #512B1E;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.reserva:hover {
+  text-decoration: none;
+  background-color: #712B1E;
+  color: #fff;
+}
+
+.content-section {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/fondo3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+}
+
+.content-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.2rem;
+}
+
+.img-item {
+  flex: 0 0 calc(33.33% - 20px);
+  text-align: center;
+}
+
+.img-item img {
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+.img-item p {
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: #57433A;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container nav {
+  text-align: right;
+}
+
+.container nav ul {
+  list-style-type: none;
+}
+
+.container nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fancy-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.fancy-para {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  padding: 20px;
+}
+
+.tragos {
+  background-color: beige;
+}
+
+
+/* Agregar estilos para la nueva sección de imagen y texto */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.image-text-section img {
+  width: 200px; /* Ajusta el ancho de la imagen según lo necesites */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.image-text-section .text-content {
+  flex: 1; /* Permite que el texto ocupe todo el espacio restante */
+}
+
+/* Estilos adicionales para el texto y otros elementos si es necesario */
+.image-text-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.image-text-section p {
+  font-size: 16px;
 }
 
 
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
- 
-  .slider {
 
-    padding: 10rem;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:url(../imgs/background.jpg);
-    color: #D3D7D3;
+  .nav-list {
+    margin-top: 10px;
   }
-  
-  .slider h1 {
-    font-size: 32px;
-   
+
+  .slider {
+    padding: 6rem;
   }
-  
-  .slider p {
-    font-size: 18px;
+
+  .content-section {
+    padding: 30px;
   }
-  
-  .reserva {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #512B1E;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
+
+  .img-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
- 
-  .resenas {
-    padding: 50px;
-    background-color: #fff;
-  }
-  
-  .resena {
+
+  .img-item {
+    flex: 0 0 100%;
     margin-bottom: 20px;
   }
-  
-  .resena p {
-    font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .slider {
+    padding: 4rem;
   }
-  
-  .nombre-cliente {
-    font-weight: bold;
+
+  .fancy-text {
+    font-size: 2rem;
   }
-  
-  
-  .contacto {
-    background-color: #f2f2f2;
-    padding: 50px;
+
+  .fancy-para {
+    font-size: 1rem;
   }
-  
- .contacto h2 {
-    font-size: 24px;
+
+ 
+  .contacto-imagen {
+    display: none;
+  }
+
+  .contacto-formulario {
+    grid-column: 1 / 3;
   }
 
   footer {
-    background-color: #292221;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-  bottom: 0;
-  left: 0;
+    display: none;
+  }
+
+  .container nav {
+    text-align: center;
+  }
+
+  .container nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.contacto {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contacto-content {
+  grid-column: 1 / 3;
+}
+
+.contacto-formulario {
+  grid-column: 1 / 2;
+}
+
+.contacto-imagen {
+  grid-column: 2 / 3;
+}
+
+.contacto-imagen img {
   width: 100%;
-  height: 40px;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #512B1E;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #712B1E;
+}
+
+@media (max-width: 576px) {
+  
+  .contacto-imagen {
+    display: none;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
+  .contacto-formulario {
+    grid-column: 1 / 3;
+  }
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
     align-items: center;
-    height: 100%; 
-    
   }
-  
-  .container p {
-    margin: 0;
+
+  .logo-img {
+    margin-bottom: 10px;
   }
- 
 
-  /* Esto es unicamente para que las imagenes en galeria no ocupen toda la pantalla, CAMBIAR */
-  img {width: 20rem;} 
+  .nav-list {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 
-  
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+
+  .container nav {
+    text-align: center;
+  }
+
+  .container nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
