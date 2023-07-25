@@ -185,7 +185,6 @@ footer {
 }
 
 
-/* Agregar estilos para la nueva sección de imagen y texto */
 .image-text-section {
   display: flex;
   align-items: center;
@@ -193,15 +192,15 @@ footer {
 }
 
 .image-text-section img {
-  width: 200px; /* Ajusta el ancho de la imagen según lo necesites */
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  width: 200px; 
+  margin-right: 20px; 
 }
 
 .image-text-section .text-content {
-  flex: 1; /* Permite que el texto ocupe todo el espacio restante */
+  flex: 1; 
 }
+    
 
-/* Estilos adicionales para el texto y otros elementos si es necesario */
 .image-text-section h3 {
   font-size: 20px;
   font-weight: bold;
@@ -391,3 +390,8 @@ form {
     margin: 10px 0;
   }
 }
+
+
+
+
+.galeria img {max-width: 100px;}
