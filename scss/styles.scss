@@ -1,12 +1,5 @@
-$color_1: #fff;
-$color_2: black;
-$color_3: #333;
-$font-family_1: Arial, sans-serif;
-$font-family_2: 'Roboto', sans-serif;
-$background-color_1: #57433A;
-$background-color_2: #512B1E;
-$background-color_3: #712B1E;
-$background-color_4: beige;
+@import 'variables';
+@import 'mixins';
 
 * {
 	margin: 0;
