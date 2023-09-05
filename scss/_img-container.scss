@@ -1,0 +1,21 @@
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.2rem;
+  
+    .img-item {
+      flex: 0 0 calc(33.33% - 20px);
+      text-align: center;
+  
+      img {
+        width: 50%;
+        max-width: 50%;
+        height: auto;
+      }
+  
+      p {
+        font-style: italic;
+        margin-bottom: 5rem;
+      }
+    }
+  }
